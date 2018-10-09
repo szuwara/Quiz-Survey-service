@@ -18,6 +18,7 @@ public class Answer {
     private long id;
     @Column(columnDefinition = "TINYINT(1)")
     private Boolean correct;
+    @Column(name = "USER_ANSWER")
     private String userAnswer;
     private Integer scale;
 

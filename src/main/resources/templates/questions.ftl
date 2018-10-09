@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Index</title>
+    <title>Questions List</title>
 </head>
 <body>
     <ul>

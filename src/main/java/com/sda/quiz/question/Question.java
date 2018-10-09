@@ -26,7 +26,8 @@ public class Question {
     private Set<Survey> surveys = new HashSet<>();
 
     @OneToMany (mappedBy = "question", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Answer> answers = new HashSet<>();
+    public Set<Answer> answers = new HashSet<>();
+
 
 
     public Question() {

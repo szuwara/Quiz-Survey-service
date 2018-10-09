@@ -20,7 +20,4 @@ public class AnswerService {
     public List<Answer> findAll(){
         return answerRepository.findAll();
     }
-    public Optional<Answer> findAllByQuestionId(Long id){
-        return answerRepository.findById(id);
-    }
 }
