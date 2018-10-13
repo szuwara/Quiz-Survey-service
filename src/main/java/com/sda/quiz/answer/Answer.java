@@ -15,7 +15,7 @@ import javax.persistence.*;
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(columnDefinition = "TINYINT(1)")
     private Boolean correct;
     @Column(name = "USER_ANSWER")

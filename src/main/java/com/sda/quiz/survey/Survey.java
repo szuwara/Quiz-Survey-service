@@ -18,7 +18,7 @@ import java.util.Set;
 @EqualsAndHashCode(exclude = "questions")
 public class Survey {
     @Id
-    private long id;
+    private Long id;
     private String title;
     private String description;
     private Date creationDate;

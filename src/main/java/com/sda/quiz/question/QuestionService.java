@@ -1,7 +1,5 @@
 package com.sda.quiz.question;
 
-import com.sda.quiz.answer.Answer;
-import com.sda.quiz.answer.AnswerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +9,6 @@ import java.util.Optional;
 @Service
 public class QuestionService {
     private QuestionRepository questionRepository;
-    private AnswerRepository answerRepository;
 
     @Autowired
     public QuestionService(QuestionRepository questionRepository) {
@@ -26,5 +23,14 @@ public class QuestionService {
     public Question save (Question question){
         return questionRepository.save(question);
     }
+
+    public Optional<Question> findById(Long id){
+        return questionRepository.findById(id);
+    }
+
+    public void delete(Question question){
+        questionRepository.delete(question);
+    }
+
 
 }
