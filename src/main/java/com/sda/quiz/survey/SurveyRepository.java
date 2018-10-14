@@ -1,8 +1,8 @@
-package com.sda.quiz.answer;
+package com.sda.quiz.survey;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AnswerRepository extends JpaRepository<Answer, Long> {
+public interface SurveyRepository extends JpaRepository <Survey, Long> {
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Edit Question</title>
+</head>
+<body>
+    <div class="container">
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <h2>Create New Question</h2>
+
+    <form class="form-horizontal" action="#" th:action="@{/questions/update}" th:object="${question}" method="post">
+    <div class="form-group">
+        <input type="hidden" th:field="*{id}"/>
+
+        <label for="question" class="col-sm-2 control-label">Question:</label>
+        <div class="col-sm-2">
+            <input type="text" class='form-control' id='question' placeholder='Edit your question' th:field="*{description}"/>
+        </div>
+        <p>Answer 1: <input type="text" th:field="*{answers[0].userAnswer}"/></p>
+        <p>Answer 2: <input type="text" th:field="*{answers[1].userAnswer}"/></p>
+        <p>Answer 3: <input type="text" th:field="*{answers[2].userAnswer}"/></p>
+        <p>Answer 4: <input type="text" th:field="*{answers[3].userAnswer}"/></p>
+        <button type="submit" class="btn btn-success">Save</button>
+    </div>
+</form>
+</div>
+</body>
+</html>

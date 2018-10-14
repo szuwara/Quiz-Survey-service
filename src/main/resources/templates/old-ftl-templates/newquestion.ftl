@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
 </head>
 <body>
 <@utils.topMenu/>
@@ -17,7 +17,7 @@
     <div class="form-group">
         <label for="question" class="col-sm-2 control-label">Question</label>
         <div class="col-sm-2">
-                    <@spring.formInput "question.description" "class='form-control' id='question' placeholder='Type your question'" "text"/>
+            <@spring.formInput "question.description" "class='form-control' id='question' placeholder='Type your question'" "text"/>
         </div>
     </div>
    <div class="form-group">

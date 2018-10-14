@@ -1,3 +1,4 @@
+<#--
 <#import "macros.ftl" as utils/>
 <#import "spring.ftl" as spring/>
 <html>
@@ -13,4 +14,4 @@
 <@utils.topMenu/>
 <h1>${tekst}</h1>
 </body>
-</html>
+</html>-->

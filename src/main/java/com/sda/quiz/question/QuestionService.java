@@ -15,7 +15,6 @@ public class QuestionService {
         this.questionRepository = questionRepository;
     }
 
-    @Autowired
     public List<Question> findAll(){
         return questionRepository.findAll();
     }
